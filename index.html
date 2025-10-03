@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sagar Karyamapudi | Lead Oracle DBA</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background-color: #f9f9f9; color: #333; }
-    header { background: #1a1a1a; padding: 20px; color: white; }
-    nav ul { display: flex; list-style: none; justify-content: center; gap: 30px; }
+    body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; }
+    header { background: #1a1a1a; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 25px; }
     nav a { color: white; text-decoration: none; font-weight: 500; }
-    .hero {
-      background: #e8e8e8;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero h1 { font-size: 36px; margin-bottom: 10px; }
+    nav a:hover { text-decoration: underline; }
+
+    .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .hero { background: #e0e0e0; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 42px; margin-bottom: 10px; }
     .hero h2 { font-size: 24px; color: #555; }
-    .about {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    h3 { font-size: 28px; margin-bottom: 20px; color: #222; }
+    p { line-height: 1.6; margin-bottom: 16px; }
+
+    .projects, .achievements, .expertise, .testimonials {
+      background: #fff;
+      margin: 40px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px;
     }
-    .about h3 { font-size: 28px; margin-bottom: 15px; }
-    .about p { line-height: 1.6; margin-bottom: 15px; }
+
+    .contact {
+      background: #f0f0f0;
+      padding: 40px;
+      border-radius: 8px;
+    }
+
     footer {
       background: #1a1a1a;
       color: #ccc;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
@@ -39,29 +53,66 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Expertise</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <h1>Sagar Karyamapudi</h1>
     <h2>Lead Oracle DBA</h2>
   </section>
 
-  <section class="about">
+  <section class="section" id="about">
     <h3>About Me</h3>
-    <p>I am a seasoned technology leader with over two decades of experience driving digital transformation, product engineering, and enterprise innovation. I've worked with global companies to deliver measurable results across revenue, efficiency, and customer satisfaction.</p>
+    <p>I am a seasoned database and infrastructure expert with over two decades of experience in managing, tuning, and securing Oracle databases for enterprise environments. My career has spanned high-impact roles at companies like TCS and Conduent, delivering mission-critical systems that power real-time applications and large-scale transactional data.</p>
+    <p>Known for blending deep technical knowledge with strategic leadership, I specialize in performance tuning, cloud migrations, high availability architectures, and compliance-driven data management.</p>
+  </section>
 
-    <p>My expertise lies in building scalable cloud-native systems, embedding AI/ML into enterprise platforms, and shifting legacy infrastructure to modern modular architecture. I've successfully led multi-million dollar portfolios, blending strategic vision with hands-on execution.</p>
+  <section class="section projects" id="projects">
+    <h3>Projects</h3>
+    <p><strong>Oracle to AWS Migration:</strong> Migrated 100+ Oracle instances to Amazon RDS with minimal downtime.</p>
+    <p><strong>Performance Optimization:</strong> Reduced query time on a key financial platform by over 60% through advanced indexing and tuning.</p>
+    <p><strong>Disaster Recovery Setup:</strong> Designed and implemented DR strategy using Data Guard and RMAN across multi-region data centers.</p>
+  </section>
 
-    <p>Previously at organizations like TCS, Conduent, I’ve built a reputation for aligning technology to business growth and operational efficiency.</p>
+  <section class="section achievements" id="achievements">
+    <h3>Achievements</h3>
+    <ul>
+      <li>Recognized as Top Performing DBA – Conduent, 2023</li>
+      <li>Published whitepaper on Oracle RAC in hybrid cloud setups</li>
+      <li>Successfully managed 99.99% uptime on enterprise-critical databases</li>
+    </ul>
+  </section>
+
+  <section class="section expertise" id="expertise">
+    <h3>Expertise</h3>
+    <ul>
+      <li>Oracle RAC & Data Guard</li>
+      <li>Performance Tuning & Indexing</li>
+      <li>Backup, Recovery & RMAN</li>
+      <li>Cloud DB (AWS RDS, Azure SQL)</li>
+      <li>Security & Regulatory Compliance (HIPAA, SOX)</li>
+    </ul>
+  </section>
+
+  <section class="section testimonials" id="testimonials">
+    <h3>Testimonials</h3>
+    <p>"Sagar has been a cornerstone of our database strategy — highly reliable, extremely skilled, and always proactive." – Sr. Manager, Conduent</p>
+    <p>"He understands both the technology and the business impact. We saw 99.99% uptime under his leadership." – Director of IT, TCS</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:sagar.dba@example.com">sagar.dba@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/sagarkaryamapudi" target="_blank">linkedin.com/in/sagarkaryamapudi</a></p>
+    <p>GitHub: <a href="https://github.com/sagardba" target="_blank">github.com/sagardba</a></p>
   </section>
 
   <footer>
@@ -70,4 +121,3 @@
 
 </body>
 </html>
-
