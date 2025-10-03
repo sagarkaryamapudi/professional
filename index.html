@@ -4,52 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sagar Karyamapudi | Lead Oracle DBA</title>
+
+  <!-- SEO + Social -->
+  <meta name="description" content="Sagar Karyamapudi - Lead Oracle DBA | Oracle RAC, Data Guard, Cloud DB, Performance Tuning, Compliance">
+  <meta property="og:title" content="Sagar Karyamapudi | Lead Oracle DBA">
+  <meta property="og:description" content="Professional journey and expertise in Oracle DBA, RAC, Data Guard, AWS, Azure, Compliance.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts + CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; }
-    header { background: #1a1a1a; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
-    nav ul { list-style: none; display: flex; justify-content: center; gap: 25px; }
-    nav a { color: white; text-decoration: none; font-weight: 500; }
-    nav a:hover { text-decoration: underline; }
-
-    .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .hero { background: #e0e0e0; text-align: center; padding: 80px 20px; }
-    .hero h1 { font-size: 42px; margin-bottom: 10px; }
-    .hero h2 { font-size: 24px; color: #555; }
-
-    h3 { font-size: 28px; margin-bottom: 20px; color: #222; }
-    p { line-height: 1.6; margin-bottom: 16px; }
-
-    .projects, .achievements, .expertise, .testimonials {
-      background: #fff;
-      margin: 40px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 40px;
-    }
-
-    .contact {
-      background: #f0f0f0;
-      padding: 40px;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #1a1a1a;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 768px) {
-      nav ul { flex-direction: column; align-items: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <nav>
       <ul>
@@ -61,20 +29,25 @@
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="darkModeToggle">🌙</button>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero" id="hero">
+    <img src="images/profile.jpg" alt="Sagar Karyamapudi" class="profile-pic">
     <h1>Sagar Karyamapudi</h1>
     <h2>Lead Oracle DBA</h2>
   </section>
 
+  <!-- About -->
   <section class="section" id="about">
     <h3>About Me</h3>
     <p>I am a seasoned database and infrastructure expert with over two decades of experience in managing, tuning, and securing Oracle databases for enterprise environments. My career has spanned high-impact roles at companies like TCS and Conduent, delivering mission-critical systems that power real-time applications and large-scale transactional data.</p>
     <p>Known for blending deep technical knowledge with strategic leadership, I specialize in performance tuning, cloud migrations, high availability architectures, and compliance-driven data management.</p>
   </section>
 
+  <!-- Projects -->
   <section class="section projects" id="projects">
     <h3>Projects</h3>
     <p><strong>Oracle to AWS Migration:</strong> Migrated 100+ Oracle instances to Amazon RDS with minimal downtime.</p>
@@ -82,6 +55,7 @@
     <p><strong>Disaster Recovery Setup:</strong> Designed and implemented DR strategy using Data Guard and RMAN across multi-region data centers.</p>
   </section>
 
+  <!-- Achievements -->
   <section class="section achievements" id="achievements">
     <h3>Achievements</h3>
     <ul>
@@ -91,6 +65,7 @@
     </ul>
   </section>
 
+  <!-- Expertise -->
   <section class="section expertise" id="expertise">
     <h3>Expertise</h3>
     <ul>
@@ -102,12 +77,14 @@
     </ul>
   </section>
 
+  <!-- Testimonials -->
   <section class="section testimonials" id="testimonials">
     <h3>Testimonials</h3>
     <p>"Sagar has been a cornerstone of our database strategy — highly reliable, extremely skilled, and always proactive." – Sr. Manager, Conduent</p>
     <p>"He understands both the technology and the business impact. We saw 99.99% uptime under his leadership." – Director of IT, TCS</p>
   </section>
 
+  <!-- Contact -->
   <section class="section contact" id="contact">
     <h3>Contact Me</h3>
     <p>Email: <a href="mailto:sagar.dba@example.com">sagar.dba@example.com</a></p>
@@ -115,9 +92,12 @@
     <p>GitHub: <a href="https://github.com/sagardba" target="_blank">github.com/sagardba</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     © 2025 Sagar Karyamapudi. All Rights Reserved.
   </footer>
 
+  <!-- JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
